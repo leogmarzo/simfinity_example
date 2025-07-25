@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
+# Simfinity Example App
+
+This is a [Next.js](https://nextjs.org) project set up for backend development and testing. The project includes TypeScript support, API routes, and a clean project structure.
+
+## Features
+
+- ✅ Next.js with App Router
+- ✅ TypeScript support
+- ✅ ESLint configuration
+- ✅ API routes for backend functionality
+- ✅ Development server with Turbopack
 
 ## Getting Started
 
@@ -6,17 +16,30 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/route.ts`. The page auto-updates as you edit the file.
+## API Endpoints
+
+- `GET /api/hello` - Basic API endpoint with optional name parameter
+- `POST /api/hello` - POST endpoint that echoes received data
+- `GET /[slug]` - Dynamic route example
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── api/
+│   │   └── hello/
+│   │       └── route.ts     # API endpoint
+│   ├── [slug]/
+│   │   └── route.ts         # Dynamic API route
+│   ├── layout.tsx           # Root layout
+│   ├── page.tsx             # Home page
+│   └── route.ts             # Root API route
+```
 
 ## Learn More
 
