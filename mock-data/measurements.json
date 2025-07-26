@@ -1,0 +1,47 @@
+[
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abce000"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef0"},
+    "takenAt": {"$date": "2025-07-01T07:00:00.000Z"},
+    "weightKg": 78.5,
+    "bodyFatPercentage": 18.2,
+    "createdAt": {"$date": "2025-07-01T07:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-01T07:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abce001"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef0"},
+    "takenAt": {"$date": "2025-07-15T07:00:00.000Z"},
+    "weightKg": 77.8,
+    "bodyFatPercentage": 17.8,
+    "createdAt": {"$date": "2025-07-15T07:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-15T07:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abce002"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef1"},
+    "takenAt": {"$date": "2025-07-02T08:00:00.000Z"},
+    "weightKg": 65.2,
+    "bodyFatPercentage": 22.5,
+    "createdAt": {"$date": "2025-07-02T08:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-02T08:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abce003"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef2"},
+    "takenAt": {"$date": "2025-07-03T06:00:00.000Z"},
+    "weightKg": 82.1,
+    "bodyFatPercentage": 15.8,
+    "createdAt": {"$date": "2025-07-03T06:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-03T06:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abce004"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef3"},
+    "takenAt": {"$date": "2025-07-04T09:00:00.000Z"},
+    "weightKg": 59.7,
+    "bodyFatPercentage": 19.3,
+    "createdAt": {"$date": "2025-07-04T09:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-04T09:00:00.000Z"}
+  }
+]

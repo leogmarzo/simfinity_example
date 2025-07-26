@@ -1,0 +1,38 @@
+[
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abcf000"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef0"},
+    "message": "Time to start your fast! Remember to stay hydrated.",
+    "sendAt": {"$date": "2025-07-27T06:00:00.000Z"},
+    "sent": false,
+    "createdAt": {"$date": "2025-07-26T10:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-26T10:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abcf001"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef1"},
+    "message": "Don't forget to log your weight this morning.",
+    "sendAt": {"$date": "2025-07-28T07:00:00.000Z"},
+    "sent": false,
+    "createdAt": {"$date": "2025-07-26T10:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-26T10:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abcf002"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef2"},
+    "message": "Consider having some electrolytes during your fast.",
+    "sendAt": {"$date": "2025-07-29T14:00:00.000Z"},
+    "sent": false,
+    "createdAt": {"$date": "2025-07-26T10:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-26T10:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "65a1b2c3d4e5f6789abcf003"},
+    "user": {"$oid": "65a1b2c3d4e5f6789abcdef3"},
+    "message": "Time to prepare your break-fast meal.",
+    "sendAt": {"$date": "2025-07-30T18:00:00.000Z"},
+    "sent": false,
+    "createdAt": {"$date": "2025-07-26T10:00:00.000Z"},
+    "updatedAt": {"$date": "2025-07-26T10:00:00.000Z"}
+  }
+]
