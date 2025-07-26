@@ -1,21 +1,6 @@
 import { connect, createSchema, use } from '@simtlix/simfinity-js';
 import { UserType, FastSessionType, MeasurementType, ReminderType } from './types';
 import connectToDatabase from '../lib/database';
-import mongoose from 'mongoose';
-
-// Modelos de Mongoose - evitar registrar múltiples veces
-function getOrCreateModel(name: string, schema: any, collection: string) {
-  try {
-    return mongoose.model(name);
-  } catch (error) {
-    return mongoose.model(name, schema, collection);
-  }
-}
-
-const UserModel = getOrCreateModel('User', new mongoose.Schema({}, { strict: false }), 'users');
-const FastSessionModel = getOrCreateModel('FastSession', new mongoose.Schema({}, { strict: false }), 'fast_sessions');
-const MeasurementModel = getOrCreateModel('Measurement', new mongoose.Schema({}, { strict: false }), 'measurements');
-const ReminderModel = getOrCreateModel('Reminder', new mongoose.Schema({}, { strict: false }), 'reminders');
 
 // Variable para controlar si ya está inicializado
 let isInitialized = false;
@@ -26,11 +11,11 @@ export async function initializeSimfinity() {
   
   await connectToDatabase();
   
-  // Conectar tipos con modelos de Mongoose
-  connect(UserModel, UserType, 'user', 'users');
-  connect(FastSessionModel, FastSessionType, 'fastSession', 'fastSessions');
-  connect(MeasurementModel, MeasurementType, 'measurement', 'measurements');
-  connect(ReminderModel, ReminderType, 'reminder', 'reminders');
+  // Simfinity crea automáticamente los modelos basándose en los tipos GraphQL
+  connect(null, UserType, 'user', 'users');
+  connect(null, FastSessionType, 'fastSession', 'fastSessions');
+  connect(null, MeasurementType, 'measurement', 'measurements');
+  connect(null, ReminderType, 'reminder', 'reminders');
   
   // Middleware global para timestamps
   use((params, next) => {
